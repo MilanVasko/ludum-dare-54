@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://da1atcj5fwvi3"]
+
+[ext_resource type="PackedScene" uid="uid://d5ffdahmu3i6" path="res://player_car/wheel/wheel.glb" id="1_wttqw"]
+
+[node name="Wheel" type="VehicleWheel3D"]
+
+[node name="Mesh" parent="." instance=ExtResource("1_wttqw")]

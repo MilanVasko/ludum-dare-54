@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dovgqieigtghl"]
+
+[ext_resource type="PackedScene" uid="uid://kf16ugkwc4lc" path="res://player_car/player_car.tscn" id="1_cpk7c"]
+[ext_resource type="PackedScene" uid="uid://bup6esxve74eg" path="res://level1/level1.tscn" id="2_rmndt"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Car" parent="." instance=ExtResource("1_cpk7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11652, 1.6295, -0.0835676)
+
+[node name="Level1" parent="." instance=ExtResource("2_rmndt")]
+
+[node name="OmniLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.77332, 0.634015, 0, -0.634015, 0.77332, 0, 6.36696, 6.3523)
+shadow_enabled = true

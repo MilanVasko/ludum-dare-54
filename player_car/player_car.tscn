@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://kf16ugkwc4lc"]
+
+[ext_resource type="Script" path="res://player_car/player_car.gd" id="1_la0by"]
+[ext_resource type="PackedScene" uid="uid://dfgt0s85fcnto" path="res://player_car/player_car.glb" id="1_pw2fn"]
+[ext_resource type="PackedScene" uid="uid://da1atcj5fwvi3" path="res://player_car/wheel/wheel.tscn" id="3_fn13r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2mcdp"]
+size = Vector3(2, 1.3, 4)
+
+[node name="Car" type="VehicleBody3D"]
+center_of_mass_mode = 1
+script = ExtResource("1_la0by")
+
+[node name="Mesh" parent="." instance=ExtResource("1_pw2fn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
+shape = SubResource("BoxShape3D_2mcdp")
+
+[node name="FrontLeftWheel" parent="." instance=ExtResource("3_fn13r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 1.2)
+use_as_traction = true
+use_as_steering = true
+
+[node name="FrontRightWheel" parent="." instance=ExtResource("3_fn13r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, 1.2)
+use_as_traction = true
+use_as_steering = true
+
+[node name="BackLeftWheel" parent="." instance=ExtResource("3_fn13r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -1.2)
+
+[node name="BackRightWheel" parent="." instance=ExtResource("3_fn13r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -1.2)
+
+[node name="CameraCenter" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.924692, -0.380715, 0, 0.380715, 0.924692, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraCenter"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -7)
+current = true
