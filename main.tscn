@@ -28,41 +28,43 @@ mouse_filter = 1
 
 [node name="TimeKeeper" parent="." instance=ExtResource("5_ivkrp")]
 
-[node name="ScoreCollectible" parent="." instance=ExtResource("6_lbsus")]
+[node name="Books" type="Node" parent="."]
+
+[node name="ScoreCollectible" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.926, 0, -25.9049)
 
-[node name="ScoreCollectible2" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible2" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5932, 0, 14.538)
 
-[node name="ScoreCollectible3" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible3" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.3259, 0, 1.7687)
 
-[node name="ScoreCollectible4" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible4" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.4114, 0, -70.5674)
 
-[node name="ScoreCollectible5" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible5" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.1334, 0, -69.9532)
 
-[node name="ScoreCollectible6" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible6" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6745, 0, 33.2893)
 
-[node name="ScoreCollectible7" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible7" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.8725, 0, 9.97623)
 
-[node name="ScoreCollectible8" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible8" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.3642, 0, 3.34569)
 
-[node name="ScoreCollectible9" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible9" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.4965, 0, 48.318)
 
-[node name="ScoreCollectible10" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible10" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.0788, 0, 57.5122)
 
-[node name="ScoreCollectible11" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible11" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.5495, 0, 82.593)
 
-[node name="ScoreCollectible12" parent="." instance=ExtResource("6_lbsus")]
+[node name="ScoreCollectible12" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.989, 0, 72.8636)
 
 [node name="PlayerCar" parent="." instance=ExtResource("1_cpk7c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.33679, 1.01831, -3.81054)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6456, 1.01831, -20.7993)
