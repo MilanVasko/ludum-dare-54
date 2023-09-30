@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dovgqieigtghl"]
+[gd_scene load_steps=8 format=3 uid="uid://dovgqieigtghl"]
 
 [ext_resource type="PackedScene" uid="uid://kf16ugkwc4lc" path="res://player_car/player_car.tscn" id="1_cpk7c"]
 [ext_resource type="MeshLibrary" uid="uid://483nlax0m2fl" path="res://tiles.tres" id="3_l2kcd"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cd1dcvn41457k" path="res://hud/hud.tscn" id="4_pwh6i"]
 [ext_resource type="PackedScene" uid="uid://chvqe8d3h05qp" path="res://time_keeper/time_keeper.tscn" id="5_ivkrp"]
 [ext_resource type="PackedScene" uid="uid://bfyivs8vso6vj" path="res://score_collectible/score_collectible.tscn" id="6_lbsus"]
+[ext_resource type="PackedScene" uid="uid://dgyudai5c18xl" path="res://fuel_collectible/fuel_collectible.tscn" id="7_kyw0c"]
 
 [node name="Main" type="Node3D"]
 
@@ -68,3 +69,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.989, 0, 72.8636)
 
 [node name="PlayerCar" parent="." instance=ExtResource("1_cpk7c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6456, 1.01831, -20.7993)
+
+[node name="FuelCollectible" parent="." instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7415, 0, -3.95558)

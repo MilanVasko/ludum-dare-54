@@ -31,5 +31,8 @@ func _physics_process(delta: float) -> void:
 func is_braking_via_throttle() -> bool:
 	return linear_velocity.normalized().dot(transform.basis.z.normalized()) > 0.5 && engine_force < 0.0
 
-func add_score(new_score: int) -> void:
-	score_keeper.add_score(new_score)
+func add_score(score_to_add: int) -> void:
+	score_keeper.add_score(score_to_add)
+
+func add_fuel(fuel_to_add: float) -> void:
+	fuel_tank.add_fuel(fuel_to_add)

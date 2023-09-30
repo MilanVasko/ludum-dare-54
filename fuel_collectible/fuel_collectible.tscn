@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgyudai5c18xl"]
+
+[ext_resource type="PackedScene" uid="uid://cns4sbnvn3x0h" path="res://fuel_collectible/fuel_collectible.glb" id="1_3if3c"]
+[ext_resource type="Script" path="res://fuel_collectible/fuel_collectible.gd" id="1_icwsx"]
+[ext_resource type="Script" path="res://bounce/bounce.gd" id="2_t7vh5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cl2rr"]
+radius = 1.0
+
+[node name="FuelCollectible" type="Area3D"]
+script = ExtResource("1_icwsx")
+fuel_amount = 5.0
+
+[node name="Position" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Mesh" parent="Position" instance=ExtResource("1_3if3c")]
+script = ExtResource("2_t7vh5")
+speed_x = 2.0
+speed_y = 4.0
+transform_distance = 0.2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Position/Mesh"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("SphereShape3D_cl2rr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

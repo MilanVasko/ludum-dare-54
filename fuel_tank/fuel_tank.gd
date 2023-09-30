@@ -13,5 +13,8 @@ func burn_fuel(engine_force: float) -> float:
 	return force_to_return
 
 func set_fuel(amount: float) -> void:
-	current_fuel = max(amount, 0.0)
+	current_fuel = clampf(amount, 0.0, 100.0)
 	get_tree().call_group("fuel_subscriber", "_on_fuel_changed", current_fuel)
+
+func add_fuel(amount: float) -> void:
+	set_fuel(current_fuel + amount)
