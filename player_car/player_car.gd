@@ -4,7 +4,7 @@ extends VehicleBody3D
 
 const MAX_ENGINE_FORCE := 400.0
 const MAX_BRAKE_FORCE := 5.0
-const MAX_STEER_ANGLE := 0.5
+const MAX_STEER_ANGLE := 0.6
 
 const STEER_SPEED := 5.0
 var steer_angle := 0.0

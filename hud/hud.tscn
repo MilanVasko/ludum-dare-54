@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cd1dcvn41457k"]
+[gd_scene load_steps=4 format=3 uid="uid://cd1dcvn41457k"]
 
-[ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud/time/time.tscn" id="1_q6un6"]
-[ext_resource type="PackedScene" uid="uid://b716w73tibqwd" path="res://hud/score/score.tscn" id="2_yxe5x"]
+[ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud_time/time.tscn" id="1_q6un6"]
+[ext_resource type="PackedScene" uid="uid://b716w73tibqwd" path="res://hud_score/score.tscn" id="2_yxe5x"]
+[ext_resource type="PackedScene" uid="uid://c8p26nw5wr6hc" path="res://hud_win_panel/win_panel.tscn" id="3_ad68h"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -25,3 +26,11 @@ layout_mode = 1
 
 [node name="Score" parent="TopPanel" instance=ExtResource("2_yxe5x")]
 layout_mode = 1
+
+[node name="WinPanel" parent="." instance=ExtResource("3_ad68h")]
+process_mode = 2
+layout_mode = 1
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0

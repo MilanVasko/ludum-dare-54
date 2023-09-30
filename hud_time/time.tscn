@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://baif8kyaxf76q"]
 
-[ext_resource type="Script" path="res://hud/time/time.gd" id="1_g0bbi"]
+[ext_resource type="Script" path="res://hud_time/time.gd" id="1_g0bbi"]
 
 [node name="Time" type="Label" groups=["time_subscriber"]]
 anchors_preset = -1

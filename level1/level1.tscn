@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bup6esxve74eg"]
+[gd_scene load_steps=5 format=3 uid="uid://bup6esxve74eg"]
 
 [ext_resource type="PackedScene" uid="uid://mok7vdmninjc" path="res://level1/level1.glb" id="1_qljm4"]
+[ext_resource type="PackedScene" uid="uid://kf16ugkwc4lc" path="res://player_car/player_car.tscn" id="2_6mxm3"]
+[ext_resource type="PackedScene" uid="uid://bfyivs8vso6vj" path="res://score_collectible/score_collectible.tscn" id="3_4kr6o"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uwg6t"]
 size = Vector3(40, 2, 40)
@@ -12,3 +14,19 @@ size = Vector3(40, 2, 40)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 shape = SubResource("BoxShape3D_uwg6t")
+
+[node name="PlayerCar" parent="." instance=ExtResource("2_6mxm3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.528395, 0, -0.859416)
+
+[node name="ScoreCollectible" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059206, 0, 13.3837)
+
+[node name="ScoreCollectible2" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5011, 0, 13.3837)
+
+[node name="ScoreCollectible3" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74943, 0, 13.3837)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.999971, -0.003692, 0.006681, -0.00415754, 0.470601, 0.882336, -0.00640167, -0.882338, 0.470572, 0, 8.58721, 0)
+shadow_enabled = true

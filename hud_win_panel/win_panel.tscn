@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8p26nw5wr6hc"]
+
+[ext_resource type="Script" path="res://hud_win_panel/win_panel.gd" id="1_2polc"]
+[ext_resource type="PackedScene" uid="uid://by4xqqvokjoeh" path="res://hud_main_menu_button/main_menu_button.tscn" id="2_5dh3x"]
+
+[node name="WinPanel" type="Panel" groups=["win_subscriber"]]
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.15
+anchor_right = 0.85
+anchor_bottom = 0.85
+offset_left = -0.0879974
+offset_top = -0.0880051
+offset_right = 0.479919
+offset_bottom = 0.311951
+script = ExtResource("1_2polc")
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0321045
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Congratulations, you've found all the pages!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenu" parent="." instance=ExtResource("2_5dh3x")]
+layout_mode = 1
+offset_top = -60.0
+grow_horizontal = 1
+grow_vertical = 1

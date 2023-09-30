@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b716w73tibqwd"]
 
-[ext_resource type="Script" path="res://hud/score/score.gd" id="1_4buwa"]
+[ext_resource type="Script" path="res://hud_score/score.gd" id="1_4buwa"]
 
 [node name="Score" type="Label" groups=["score_subscriber"]]
 anchors_preset = -1

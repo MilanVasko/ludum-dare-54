@@ -1,5 +1,7 @@
 extends Node3D
 
+@export var starting_pitch = 20.0
+
 const JOYPAD_SENSITIVITY := 0.035
 const MOUSE_SENSITIVITY := 0.0035
 
@@ -12,6 +14,7 @@ const MAX_PITCH := HALF_PI * 0.9
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	pitch.rotation_degrees.x = starting_pitch
 
 func _process(_delta: float) -> void:
 	var inputs := Input.get_vector("look_left_joypad", "look_right_joypad", "look_up_joypad", "look_down_joypad")
