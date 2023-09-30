@@ -1,21 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://dovgqieigtghl"]
+[gd_scene load_steps=7 format=3 uid="uid://dovgqieigtghl"]
 
-[ext_resource type="PackedScene" uid="uid://bup6esxve74eg" path="res://level1/level1.tscn" id="2_rmndt"]
+[ext_resource type="PackedScene" uid="uid://kf16ugkwc4lc" path="res://player_car/player_car.tscn" id="1_cpk7c"]
 [ext_resource type="MeshLibrary" uid="uid://483nlax0m2fl" path="res://tiles.tres" id="3_l2kcd"]
 [ext_resource type="PackedScene" uid="uid://du8wtgoqyub2d" path="res://ingame_music/ingame_music.tscn" id="3_unyfd"]
 [ext_resource type="PackedScene" uid="uid://cd1dcvn41457k" path="res://hud/hud.tscn" id="4_pwh6i"]
 [ext_resource type="PackedScene" uid="uid://chvqe8d3h05qp" path="res://time_keeper/time_keeper.tscn" id="5_ivkrp"]
+[ext_resource type="PackedScene" uid="uid://bfyivs8vso6vj" path="res://score_collectible/score_collectible.tscn" id="6_lbsus"]
 
 [node name="Main" type="Node3D"]
-
-[node name="Level1" parent="." instance=ExtResource("2_rmndt")]
 
 [node name="OmniLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.77332, 0.634015, 0, -0.634015, 0.77332, 0, 6.36696, 6.3523)
 shadow_enabled = true
 
 [node name="GridMap" type="GridMap" parent="."]
-transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, -40, 0.5, 150)
+transform = Transform3D(3.735, 0, 0, 0, 3.735, 0, 0, 0, 3.735, 0, 0, 0)
 mesh_library = ExtResource("3_l2kcd")
 cell_center_y = false
 data = {
@@ -28,3 +27,42 @@ mouse_filter = 1
 [node name="IngameMusic" parent="." instance=ExtResource("3_unyfd")]
 
 [node name="TimeKeeper" parent="." instance=ExtResource("5_ivkrp")]
+
+[node name="ScoreCollectible" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.926, 0, -25.9049)
+
+[node name="ScoreCollectible2" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5932, 0, 14.538)
+
+[node name="ScoreCollectible3" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.3259, 0, 1.7687)
+
+[node name="ScoreCollectible4" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.4114, 0, -70.5674)
+
+[node name="ScoreCollectible5" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.1334, 0, -69.9532)
+
+[node name="ScoreCollectible6" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6745, 0, 33.2893)
+
+[node name="ScoreCollectible7" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.8725, 0, 9.97623)
+
+[node name="ScoreCollectible8" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.3642, 0, 3.34569)
+
+[node name="ScoreCollectible9" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.4965, 0, 48.318)
+
+[node name="ScoreCollectible10" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.0788, 0, 57.5122)
+
+[node name="ScoreCollectible11" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.5495, 0, 82.593)
+
+[node name="ScoreCollectible12" parent="." instance=ExtResource("6_lbsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.989, 0, 72.8636)
+
+[node name="PlayerCar" parent="." instance=ExtResource("1_cpk7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.33679, 1.01831, -3.81054)

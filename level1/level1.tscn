@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bup6esxve74eg"]
+[gd_scene load_steps=9 format=3 uid="uid://bup6esxve74eg"]
 
 [ext_resource type="PackedScene" uid="uid://mok7vdmninjc" path="res://level1/level1.glb" id="1_qljm4"]
 [ext_resource type="PackedScene" uid="uid://kf16ugkwc4lc" path="res://player_car/player_car.tscn" id="2_6mxm3"]
-[ext_resource type="PackedScene" uid="uid://bfyivs8vso6vj" path="res://score_collectible/score_collectible.tscn" id="3_4kr6o"]
 [ext_resource type="PackedScene" uid="uid://o6adru3yw3py" path="res://tree/tree1.tscn" id="4_fwfnu"]
 [ext_resource type="PackedScene" uid="uid://p8xqq2l6j2m" path="res://tree/tree2.tscn" id="5_dhrog"]
 [ext_resource type="PackedScene" uid="uid://cedp2rwbp7c5d" path="res://rock/rock2.tscn" id="6_tct0u"]
@@ -22,42 +21,6 @@ shape = SubResource("BoxShape3D_uwg6t")
 
 [node name="PlayerCar" parent="." instance=ExtResource("2_6mxm3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.528395, 0, -0.859416)
-
-[node name="ScoreCollectible" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059206, 0, 13.3837)
-
-[node name="ScoreCollectible2" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5011, 0, 13.3837)
-
-[node name="ScoreCollectible3" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74943, 0, 13.3837)
-
-[node name="ScoreCollectible4" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.68991, 0, 13.3837)
-
-[node name="ScoreCollectible5" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.062, 0, 10.895)
-
-[node name="ScoreCollectible6" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.062, 0, 15.9922)
-
-[node name="ScoreCollectible7" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.062, 0, -7.89741)
-
-[node name="ScoreCollectible8" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54538, 0, -7.89741)
-
-[node name="ScoreCollectible9" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.30777, 0, -7.89741)
-
-[node name="ScoreCollectible10" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.30777, 0, -14.2706)
-
-[node name="ScoreCollectible11" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72148, 0, -14.2706)
-
-[node name="ScoreCollectible12" parent="." instance=ExtResource("3_4kr6o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72148, 0, -17.0811)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.999971, -0.003692, 0.006681, -0.00415754, 0.470601, 0.882336, -0.00640167, -0.882338, 0.470572, 0, 8.58721, 0)
