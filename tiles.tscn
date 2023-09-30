@@ -4,8 +4,8 @@
 [ext_resource type="ArrayMesh" uid="uid://e0vbpn2mwuai" path="res://tile_path.res" id="2_nj5po"]
 [ext_resource type="ArrayMesh" uid="uid://dxdhxisclswjv" path="res://tile_path_corner.res" id="3_kqwvo"]
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_n5ple"]
-data = PackedVector3Array(1, 0.5, -1, -1, 0.5, 1, -1, 0.5, -1, 1, 0.5, -1, 1, 0.5, 1, -1, 0.5, 1, -1, 0, -1, -1, 0.5, 1, -1, 0, 1, -1, 0, -1, -1, 0.5, -1, -1, 0.5, 1, -1, 0, 1, 1, 0.5, 1, 1, 0, 1, -1, 0, 1, -1, 0.5, 1, 1, 0.5, 1, 1, 0, -1, -1, 0.5, -1, -1, 0, -1, 1, 0, -1, 1, 0.5, -1, -1, 0.5, -1, 1, 0, 1, 1, 0.5, -1, 1, 0, -1, 1, 0, 1, 1, 0.5, 1, 1, 0.5, -1)
+[sub_resource type="BoxShape3D" id="BoxShape3D_8rfp0"]
+size = Vector3(2, 0.5, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ffmlj"]
 size = Vector3(2, 1, 2)
@@ -22,7 +22,8 @@ mesh = ExtResource("1_ufw18")
 [node name="body" type="StaticBody3D" parent="tile_cliff"]
 
 [node name="collision" type="CollisionShape3D" parent="tile_cliff/body"]
-shape = SubResource("ConcavePolygonShape3D_n5ple")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_8rfp0")
 
 [node name="tile_path" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.00128, 0, 0, 0, 2.00128, 0, 0, 0, 2.00128, -2, 0, 0)
