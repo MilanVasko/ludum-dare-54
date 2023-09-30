@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://kf16ugkwc4lc"]
+[gd_scene load_steps=8 format=3 uid="uid://kf16ugkwc4lc"]
 
 [ext_resource type="Script" path="res://player_car/player_car.gd" id="1_la0by"]
 [ext_resource type="PackedScene" uid="uid://dfgt0s85fcnto" path="res://player_car/player_car.glb" id="1_pw2fn"]
 [ext_resource type="PackedScene" uid="uid://da1atcj5fwvi3" path="res://player_car/wheel/wheel.tscn" id="3_fn13r"]
 [ext_resource type="PackedScene" uid="uid://by2c8n5h1mrn2" path="res://player_camera/player_camera.tscn" id="4_7qoj3"]
 [ext_resource type="PackedScene" uid="uid://dtmrsro6h4dyr" path="res://score_keeper/score_keeper.tscn" id="5_afi3m"]
+[ext_resource type="PackedScene" uid="uid://bpx461klduqmk" path="res://fuel_tank/fuel_tank.tscn" id="6_625kb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2mcdp"]
 size = Vector3(2, 1.3, 4)
@@ -39,3 +40,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -1.2)
 [node name="Camera" parent="." instance=ExtResource("4_7qoj3")]
 
 [node name="ScoreKeeper" parent="." instance=ExtResource("5_afi3m")]
+
+[node name="FuelTank" parent="." instance=ExtResource("6_625kb")]

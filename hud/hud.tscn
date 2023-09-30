@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cd1dcvn41457k"]
+[gd_scene load_steps=5 format=3 uid="uid://cd1dcvn41457k"]
 
 [ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud_time/time.tscn" id="1_q6un6"]
 [ext_resource type="PackedScene" uid="uid://b716w73tibqwd" path="res://hud_score/score.tscn" id="2_yxe5x"]
 [ext_resource type="PackedScene" uid="uid://c8p26nw5wr6hc" path="res://hud_win_panel/win_panel.tscn" id="3_ad68h"]
+[ext_resource type="PackedScene" uid="uid://bstsgisrbdki7" path="res://hud_fuel/fuel.tscn" id="4_lghy1"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -34,3 +35,19 @@ offset_left = 0.0
 offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
+
+[node name="BottomPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -45.0
+offset_right = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fuel" parent="BottomPanel" instance=ExtResource("4_lghy1")]
+layout_mode = 1

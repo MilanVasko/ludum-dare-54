@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpx461klduqmk"]
+
+[ext_resource type="Script" path="res://fuel_tank/fuel_tank.gd" id="1_cr7ae"]
+
+[node name="FuelTank" type="Node"]
+script = ExtResource("1_cr7ae")
