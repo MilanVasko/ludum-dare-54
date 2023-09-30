@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfyivs8vso6vj"]
+
+[ext_resource type="Script" path="res://score_collectible/score_collectible.gd" id="1_de7wd"]
+[ext_resource type="PackedScene" uid="uid://dpqbyyi10s8i1" path="res://score_collectible/score_collectible.glb" id="1_p0m4i"]
+[ext_resource type="Script" path="res://bounce/bounce.gd" id="3_4bh1d"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lg5lw"]
+radius = 1.0
+
+[node name="ScoreCollectible" type="Area3D"]
+script = ExtResource("1_de7wd")
+
+[node name="Position" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Mesh" parent="Position" instance=ExtResource("1_p0m4i")]
+script = ExtResource("3_4bh1d")
+speed = 4.0
+transform_distance = 0.2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Position/Mesh"]
+light_color = Color(1, 0, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("SphereShape3D_lg5lw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

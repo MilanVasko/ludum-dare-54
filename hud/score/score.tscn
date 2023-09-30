@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b716w73tibqwd"]
+
+[ext_resource type="Script" path="res://hud/score/score.gd" id="1_4buwa"]
+
+[node name="Score" type="Label" groups=["score_subscriber"]]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "asdsda"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_4buwa")

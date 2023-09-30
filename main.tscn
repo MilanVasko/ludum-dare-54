@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dovgqieigtghl"]
+[gd_scene load_steps=6 format=3 uid="uid://dovgqieigtghl"]
 
 [ext_resource type="PackedScene" uid="uid://kf16ugkwc4lc" path="res://player_car/player_car.tscn" id="1_cpk7c"]
 [ext_resource type="PackedScene" uid="uid://bup6esxve74eg" path="res://level1/level1.tscn" id="2_rmndt"]
+[ext_resource type="PackedScene" uid="uid://cd1dcvn41457k" path="res://hud/hud.tscn" id="3_kho68"]
+[ext_resource type="PackedScene" uid="uid://bfyivs8vso6vj" path="res://score_collectible/score_collectible.tscn" id="4_l8af7"]
+[ext_resource type="PackedScene" uid="uid://chvqe8d3h05qp" path="res://time_keeper/time_keeper.tscn" id="5_h83nq"]
 
 [node name="Main" type="Node3D"]
 
@@ -13,3 +16,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11652, 1.6295, -0.0835676)
 [node name="OmniLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.77332, 0.634015, 0, -0.634015, 0.77332, 0, 6.36696, 6.3523)
 shadow_enabled = true
+
+[node name="HUD" parent="." instance=ExtResource("3_kho68")]
+mouse_filter = 1
+
+[node name="ScoreCollectible" parent="." instance=ExtResource("4_l8af7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.77636, 0, 9.67991)
+
+[node name="ScoreCollectible2" parent="." instance=ExtResource("4_l8af7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.73255, 0, 9.67991)
+
+[node name="ScoreCollectible3" parent="." instance=ExtResource("4_l8af7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.03252, 0, -0.838013)
+
+[node name="ScoreCollectible4" parent="." instance=ExtResource("4_l8af7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0092, 0, 7.27548)
+
+[node name="ScoreCollectible5" parent="." instance=ExtResource("4_l8af7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.32796, 0, 15.6475)
+
+[node name="TimeKeeper" parent="." instance=ExtResource("5_h83nq")]

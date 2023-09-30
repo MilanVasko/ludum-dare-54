@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd1dcvn41457k"]
+
+[ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud/time/time.tscn" id="1_q6un6"]
+[ext_resource type="PackedScene" uid="uid://b716w73tibqwd" path="res://hud/score/score.tscn" id="2_yxe5x"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 45.0
+
+[node name="Time" parent="TopPanel" instance=ExtResource("1_q6un6")]
+layout_mode = 1
+
+[node name="Score" parent="TopPanel" instance=ExtResource("2_yxe5x")]
+layout_mode = 1
