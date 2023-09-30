@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://cd1dcvn41457k"]
+[gd_scene load_steps=9 format=3 uid="uid://cd1dcvn41457k"]
 
 [ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud_time/time.tscn" id="1_q6un6"]
+[ext_resource type="Script" path="res://hud/hud.gd" id="1_q8j5u"]
 [ext_resource type="PackedScene" uid="uid://b716w73tibqwd" path="res://hud_score/score.tscn" id="2_yxe5x"]
 [ext_resource type="PackedScene" uid="uid://c8p26nw5wr6hc" path="res://hud_win_panel/win_panel.tscn" id="3_ad68h"]
 [ext_resource type="PackedScene" uid="uid://bstsgisrbdki7" path="res://hud_fuel/fuel.tscn" id="4_lghy1"]
+[ext_resource type="PackedScene" uid="uid://bu78usiehtjte" path="res://book_preview_panel/book_preview_panel.tscn" id="5_wyxgi"]
+[ext_resource type="Script" path="res://hud/pause_book_preview_panel.gd" id="7_68rm4"]
+[ext_resource type="PackedScene" uid="uid://cf5vq6dk58a5w" path="res://book_text_keeper/book_text_keeper.tscn" id="8_1t4p6"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -12,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_q8j5u")
 
 [node name="TopPanel" type="Panel" parent="."]
 layout_mode = 1
@@ -51,3 +56,35 @@ grow_vertical = 2
 
 [node name="Fuel" parent="BottomPanel" instance=ExtResource("4_lghy1")]
 layout_mode = 1
+
+[node name="BookPreviewPanel" type="Control" parent="."]
+process_mode = 3
+layout_mode = 1
+anchor_left = 0.5
+anchor_right = 1.0
+offset_left = 110.0
+offset_right = -5.0
+grow_horizontal = 2
+
+[node name="BookPreviewPanel" parent="BookPreviewPanel" instance=ExtResource("5_wyxgi")]
+layout_mode = 1
+anchors_preset = -1
+self_destruct_instances = true
+book_text_keeper_path = NodePath("../../BookTextKeeper")
+
+[node name="PauseBookPreviewPanel" type="Control" parent="."]
+process_mode = 3
+layout_mode = 1
+anchor_left = 0.15
+anchor_top = 0.15
+anchor_right = 0.85
+anchor_bottom = 0.85
+grow_horizontal = 2
+script = ExtResource("7_68rm4")
+
+[node name="BookPreviewPanel" parent="PauseBookPreviewPanel" instance=ExtResource("5_wyxgi")]
+layout_mode = 1
+anchors_preset = -1
+book_text_keeper_path = NodePath("../../BookTextKeeper")
+
+[node name="BookTextKeeper" parent="." instance=ExtResource("8_1t4p6")]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf5vq6dk58a5w"]
+
+[ext_resource type="Script" path="res://book_text_keeper/book_text_keeper.gd" id="1_yq5js"]
+
+[node name="BookTextKeeper" type="Node" groups=["book_subscriber"]]
+script = ExtResource("1_yq5js")

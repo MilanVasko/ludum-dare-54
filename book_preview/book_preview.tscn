@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8wyqk8v4xusk"]
+
+[ext_resource type="Script" path="res://book_preview/book_preview.gd" id="1_bje3h"]
+
+[node name="BookPreview" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bje3h")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Jo Die woke up in a dark, small room with no windows and doors. How did she get there? Where was she? Why was she here?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu78usiehtjte"]
+
+[ext_resource type="Script" path="res://book_preview_panel/book_preview_panel.gd" id="1_wfqy0"]
+
+[node name="BookPreviewPanel" type="VBoxContainer" groups=["book_subscriber"]]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("1_wfqy0")

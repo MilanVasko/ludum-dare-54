@@ -32,6 +32,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5011, 0, 13.3837)
 [node name="ScoreCollectible3" parent="." instance=ExtResource("3_4kr6o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74943, 0, 13.3837)
 
+[node name="ScoreCollectible4" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.68991, 0, 13.3837)
+
+[node name="ScoreCollectible5" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.062, 0, 10.895)
+
+[node name="ScoreCollectible6" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.062, 0, 15.9922)
+
+[node name="ScoreCollectible7" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.062, 0, -7.89741)
+
+[node name="ScoreCollectible8" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54538, 0, -7.89741)
+
+[node name="ScoreCollectible9" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.30777, 0, -7.89741)
+
+[node name="ScoreCollectible10" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.30777, 0, -14.2706)
+
+[node name="ScoreCollectible11" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72148, 0, -14.2706)
+
+[node name="ScoreCollectible12" parent="." instance=ExtResource("3_4kr6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72148, 0, -17.0811)
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.999971, -0.003692, 0.006681, -0.00415754, 0.470601, 0.882336, -0.00640167, -0.882338, 0.470572, 0, 8.58721, 0)
 light_color = Color(1, 0.909804, 0.619608, 1)
