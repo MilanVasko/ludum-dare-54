@@ -7,6 +7,10 @@ const MAX_STEER_ANGLE := 0.5
 const STEER_SPEED := 5.0
 var steer_angle := 0.0
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().quit()
+
 func _physics_process(delta: float) -> void:
 	var throttle_amount := Input.get_action_strength("forward") - Input.get_action_strength("backward")
 	var brake_amount := Input.get_action_strength("brake")
