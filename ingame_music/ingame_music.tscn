@@ -1,0 +1,35 @@
+[gd_scene load_steps=10 format=3 uid="uid://du8wtgoqyub2d"]
+
+[ext_resource type="AudioStream" uid="uid://bfap6s2p2mu4k" path="res://ingame_music/drums.ogg" id="1_54r6x"]
+[ext_resource type="Script" path="res://ingame_music/ingame_music.gd" id="1_fuo4o"]
+[ext_resource type="AudioStream" uid="uid://cch6516fbroo0" path="res://ingame_music/effects.ogg" id="2_fdepy"]
+[ext_resource type="AudioStream" uid="uid://dexy32jkdmwa3" path="res://ingame_music/guitar1.ogg" id="3_ft68f"]
+[ext_resource type="AudioStream" uid="uid://dy1m7bowrfmks" path="res://ingame_music/guitar2.ogg" id="3_iu3ve"]
+[ext_resource type="Script" path="res://ingame_music/effects.gd" id="4_0etk5"]
+[ext_resource type="AudioStream" uid="uid://dfmem83c8lmq6" path="res://ingame_music/guitar-intro.ogg" id="4_4dx8f"]
+[ext_resource type="Script" path="res://ingame_music/guitar.gd" id="6_dsmvp"]
+[ext_resource type="AudioStream" uid="uid://dvmab56q0wefb" path="res://ingame_music/guitar3.ogg" id="8_wg6wl"]
+
+[node name="IngameMusic" type="Node"]
+script = ExtResource("1_fuo4o")
+
+[node name="Drums" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_54r6x")
+autoplay = true
+bus = &"Music"
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("2_fdepy")
+autoplay = true
+bus = &"MusicEffects"
+script = ExtResource("4_0etk5")
+
+[node name="Guitar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_4dx8f")
+autoplay = true
+bus = &"Guitar"
+script = ExtResource("6_dsmvp")
+variations = Array[AudioStream]([ExtResource("3_ft68f"), ExtResource("3_iu3ve"), ExtResource("8_wg6wl")])
+
+[connection signal="finished" from="Guitar" to="Guitar" method="_on_finished"]

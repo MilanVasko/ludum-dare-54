@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dovgqieigtghl"]
+[gd_scene load_steps=5 format=3 uid="uid://dovgqieigtghl"]
 
 [ext_resource type="PackedScene" uid="uid://bup6esxve74eg" path="res://level1/level1.tscn" id="2_rmndt"]
 [ext_resource type="PackedScene" uid="uid://cd1dcvn41457k" path="res://hud/hud.tscn" id="3_kho68"]
+[ext_resource type="PackedScene" uid="uid://du8wtgoqyub2d" path="res://ingame_music/ingame_music.tscn" id="4_hbpp2"]
 [ext_resource type="PackedScene" uid="uid://chvqe8d3h05qp" path="res://time_keeper/time_keeper.tscn" id="5_h83nq"]
 
 [node name="Main" type="Node3D"]
@@ -12,3 +13,5 @@
 mouse_filter = 1
 
 [node name="TimeKeeper" parent="." instance=ExtResource("5_h83nq")]
+
+[node name="IngameMusic" parent="." instance=ExtResource("4_hbpp2")]
