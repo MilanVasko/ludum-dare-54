@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cd1dcvn41457k"]
+[gd_scene load_steps=10 format=3 uid="uid://cd1dcvn41457k"]
 
 [ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud_time/time.tscn" id="1_q6un6"]
 [ext_resource type="Script" path="res://hud/hud.gd" id="1_q8j5u"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bu78usiehtjte" path="res://book_preview_panel/book_preview_panel.tscn" id="5_wyxgi"]
 [ext_resource type="Script" path="res://hud/pause_book_preview_panel.gd" id="7_68rm4"]
 [ext_resource type="PackedScene" uid="uid://cf5vq6dk58a5w" path="res://book_text_keeper/book_text_keeper.tscn" id="8_1t4p6"]
+[ext_resource type="Script" path="res://hud/restart.gd" id="8_ah1o6"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -87,4 +88,21 @@ layout_mode = 1
 anchors_preset = -1
 book_text_keeper_path = NodePath("../../BookTextKeeper")
 
+[node name="Restart" type="Button" parent="PauseBookPreviewPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Restart"
+script = ExtResource("8_ah1o6")
+
 [node name="BookTextKeeper" parent="." instance=ExtResource("8_1t4p6")]
+
+[connection signal="pressed" from="PauseBookPreviewPanel/Restart" to="PauseBookPreviewPanel/Restart" method="_on_pressed"]

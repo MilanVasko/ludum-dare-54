@@ -24,12 +24,23 @@ offset_right = 0.0321045
 offset_bottom = -80.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Congratulations, you've found all the pages!"
+text = "Congratulations, you've found all the pages!
+
+
+Created for Ludum Dare 54 in 48 hours by:
+
+EmaZuro
+Milan Vaško
+NettlesCat"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MainMenu" parent="." instance=ExtResource("2_5dh3x")]
+[node name="Restart" parent="." instance=ExtResource("2_5dh3x")]
 layout_mode = 1
-offset_top = -60.0
-grow_horizontal = 1
-grow_vertical = 1
+anchors_preset = 7
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 0.0
+offset_right = 100.0
+offset_bottom = 50.0
+text = "Restart"
