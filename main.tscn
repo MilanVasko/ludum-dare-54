@@ -13,10 +13,6 @@ size = Vector3(400, 1, 260)
 
 [node name="Main" type="Node3D"]
 
-[node name="OmniLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.77332, 0.634015, 0, -0.634015, 0.77332, 0, 6.36696, 6.3523)
-shadow_enabled = true
-
 [node name="GridMap" type="GridMap" parent="."]
 transform = Transform3D(3.735, 0, 0, 0, 3.735, 0, 0, 0, 3.735, 0, 0, 0)
 mesh_library = ExtResource("3_l2kcd")
@@ -81,3 +77,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7415, 0, -3.95558)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_bghtc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.144932, 0.989442, 0, -0.989442, 0.144932, 0, 3.12813, 0)
+light_color = Color(1, 0.776471, 0.533333, 1)
+light_energy = 0.015

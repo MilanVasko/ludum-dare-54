@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://4eiu38kqtxoe"]
 
-[ext_resource type="ArrayMesh" uid="uid://du3h2gf5i7c4y" path="res://tile_cliff.res" id="1_em0c2"]
+[ext_resource type="ArrayMesh" uid="uid://du3h2gf5i7c4y" path="res://tile_cliff.res" id="1_bslqb"]
 [ext_resource type="ArrayMesh" uid="uid://e0vbpn2mwuai" path="res://tile_path.res" id="2_nj5po"]
 [ext_resource type="ArrayMesh" uid="uid://dxdhxisclswjv" path="res://tile_path_corner.res" id="3_kqwvo"]
 
@@ -11,7 +11,7 @@ size = Vector3(2, 0.5, 2)
 
 [node name="tile_cliff" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2, 0, 0)
-mesh = ExtResource("1_em0c2")
+mesh = ExtResource("1_bslqb")
 
 [node name="body" type="StaticBody3D" parent="tile_cliff"]
 

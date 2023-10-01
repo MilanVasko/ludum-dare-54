@@ -71,3 +71,7 @@ look_down_joypad={
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":3,"axis_value":1.0,"script":null)
 ]
 }
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://brmkvwjxd1p01"]
+
+[ext_resource type="Texture2D" uid="uid://q24qdtc0aiw7" path="res://tile_path_map.png" id="1_vpcok"]
+[ext_resource type="Texture2D" uid="uid://bv4hxc8wwahq3" path="res://tile_noise_texture.tres" id="2_sxedg"]
+
+[resource]
+resource_name = "Tiles"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_vpcok")
+normal_enabled = true
+normal_texture = ExtResource("2_sxedg")
