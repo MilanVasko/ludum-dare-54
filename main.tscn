@@ -105,7 +105,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.297, 0, 19.4145)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.544, 0, 48.6459)
 
 [node name="PlayerCar" parent="." instance=ExtResource("1_cpk7c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6456, 1.01831, -20.7993)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.646, 0, -20.799)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
