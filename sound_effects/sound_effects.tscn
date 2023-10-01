@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://colpq5v1ssaly"]
+
+[ext_resource type="Script" path="res://sound_effects/sound_effects.gd" id="1_3hpb3"]
+[ext_resource type="AudioStream" uid="uid://ifw43wq8x5n0" path="res://sound_effects/bear.wav" id="1_5inep"]
+[ext_resource type="AudioStream" uid="uid://o4148xbw0sml" path="res://sound_effects/gust_of_wind.wav" id="2_ai2hs"]
+[ext_resource type="Script" path="res://sound_effects/sound.gd" id="3_8gwme"]
+[ext_resource type="AudioStream" uid="uid://dp8gniv7lwq30" path="res://sound_effects/owl.wav" id="3_yqxd4"]
+
+[node name="SoundEffects" type="Node3D"]
+script = ExtResource("1_3hpb3")
+rotate_speed = 0.2
+
+[node name="Bear" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+stream = ExtResource("1_5inep")
+bus = &"SoundEffects"
+script = ExtResource("3_8gwme")
+min_delay = 5.0
+max_delay = 10.0
+
+[node name="GustOfWind" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+stream = ExtResource("2_ai2hs")
+bus = &"SoundEffects"
+script = ExtResource("3_8gwme")
+min_delay = 2.0
+max_delay = 10.0
+
+[node name="Owl" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+stream = ExtResource("3_yqxd4")
+bus = &"SoundEffects"
+script = ExtResource("3_8gwme")
+min_delay = 2.0
+max_delay = 10.0
