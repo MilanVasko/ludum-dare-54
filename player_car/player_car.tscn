@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://kf16ugkwc4lc"]
+[gd_scene load_steps=12 format=3 uid="uid://kf16ugkwc4lc"]
 
 [ext_resource type="Script" path="res://player_car/player_car.gd" id="1_la0by"]
 [ext_resource type="PackedScene" uid="uid://dpo1gimwfmj1u" path="res://player_car/car-v0.2.0.glb" id="2_8aexg"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bpx461klduqmk" path="res://fuel_tank/fuel_tank.tscn" id="6_625kb"]
 [ext_resource type="AudioStream" uid="uid://c5hqnnesoh8w0" path="res://player_car/engine_sound.wav" id="8_chl1p"]
 [ext_resource type="AudioStream" uid="uid://bhj1seup586r1" path="res://score_collectible/page_grab.wav" id="8_cleu5"]
+[ext_resource type="AudioStream" uid="uid://dav6u8gtu1lk6" path="res://fuel_collectible/gas_grab.wav" id="9_ljedf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2mcdp"]
 size = Vector3(2, 1.3, 4)
@@ -98,6 +99,11 @@ bus = &"Engine"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96167, 1.53031)
 stream = ExtResource("8_cleu5")
 bus = &"PageGrab"
+
+[node name="GasGrab" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96167, 1.53031)
+stream = ExtResource("9_ljedf")
+bus = &"GasGrab"
 
 [editable path="FrontLeftWheel"]
 [editable path="BackLeftWheel"]

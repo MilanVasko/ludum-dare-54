@@ -4,6 +4,7 @@ extends VehicleBody3D
 @onready var fuel_tank := $FuelTank
 @onready var engine := $Engine
 @onready var page_grab := $PageGrab
+@onready var gas_grab := $GasGrab
 
 @onready var back_light_left := $BackLightLeft
 @onready var back_light_right := $BackLightRight
@@ -61,4 +62,5 @@ func add_score(score_to_add: int) -> void:
 	score_keeper.add_score(score_to_add)
 
 func add_fuel(fuel_to_add: float) -> void:
+	gas_grab.play()
 	fuel_tank.add_fuel(fuel_to_add)
