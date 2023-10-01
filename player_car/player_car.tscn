@@ -1,7 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://kf16ugkwc4lc"]
+[gd_scene load_steps=10 format=3 uid="uid://kf16ugkwc4lc"]
 
 [ext_resource type="Script" path="res://player_car/player_car.gd" id="1_la0by"]
-[ext_resource type="PackedScene" uid="uid://dfgt0s85fcnto" path="res://player_car/player_car.glb" id="1_pw2fn"]
 [ext_resource type="PackedScene" uid="uid://dpo1gimwfmj1u" path="res://player_car/car-v0.2.0.glb" id="2_8aexg"]
 [ext_resource type="PackedScene" uid="uid://da1atcj5fwvi3" path="res://player_car/wheel/wheel.tscn" id="3_fn13r"]
 [ext_resource type="PackedScene" uid="uid://by2c8n5h1mrn2" path="res://player_camera/player_camera.tscn" id="4_7qoj3"]
@@ -21,10 +20,6 @@ script = ExtResource("1_la0by")
 
 [node name="car-v0_2_0" parent="." instance=ExtResource("2_8aexg")]
 transform = Transform3D(1.545, 0, 0, 0, 1.545, 0, 0, 0, 1.545, 0, 0.00294852, -0.0299401)
-
-[node name="Mesh" parent="." instance=ExtResource("1_pw2fn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
