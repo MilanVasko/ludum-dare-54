@@ -1,0 +1,21 @@
+[gd_scene load_steps=8 format=3 uid="uid://bobulvmjgjee8"]
+
+[ext_resource type="Script" path="res://random_decoration/random_decoration.gd" id="1_ucr1o"]
+[ext_resource type="PackedScene" uid="uid://o6adru3yw3py" path="res://tree/tree1.tscn" id="2_j0jx0"]
+[ext_resource type="PackedScene" uid="uid://p8xqq2l6j2m" path="res://tree/tree2.tscn" id="3_rrv11"]
+[ext_resource type="PackedScene" uid="uid://b5oyauwfq8f0x" path="res://rock/rock1.tscn" id="4_b6j66"]
+[ext_resource type="PackedScene" uid="uid://cedp2rwbp7c5d" path="res://rock/rock2.tscn" id="5_omdii"]
+[ext_resource type="PackedScene" uid="uid://ccjswlgkpy0ae" path="res://log/log.tscn" id="6_mj4mv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_oj1ho"]
+
+[node name="RandomDecoration" type="Marker3D"]
+gizmo_extents = 0.69
+script = ExtResource("1_ucr1o")
+decoration_scenes = Array[PackedScene]([ExtResource("2_j0jx0"), ExtResource("3_rrv11"), ExtResource("4_b6j66"), ExtResource("5_omdii"), ExtResource("6_mj4mv")])
+min_scale = 0.8
+max_scale = 1.5
+
+[node name="Placeholder" type="CSGMesh3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("BoxMesh_oj1ho")

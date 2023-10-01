@@ -1,14 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cedp2rwbp7c5d"]
+[gd_scene load_steps=2 format=3 uid="uid://cedp2rwbp7c5d"]
 
 [ext_resource type="PackedScene" uid="uid://bjf7mov6p00t7" path="res://rock/rock2.glb" id="1_kqjpg"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_htbic"]
-size = Vector3(2.44321, 4.40347, 1.97349)
-
-[node name="Rock2" type="StaticBody3D"]
+[node name="Rock2" type="Node3D"]
 
 [node name="Mesh" parent="." instance=ExtResource("1_kqjpg")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0167246, 2.19091, 0.0668983)
-shape = SubResource("BoxShape3D_htbic")

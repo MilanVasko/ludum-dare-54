@@ -11,10 +11,10 @@ const texts: Array[String] = [
 	"Jo grabbed the lamp, since it was a light source and she was smart and knew it could help her.",
 	"Looking around the room she found a little green plant and a key. But there were no doors.",
 	"So she went to look around the walls for some kind of a keyhole, but... Nothing.",
-	"Jo is becoming more and more desperate. She starts to pond on the walls.",
-	"Suddenly when she punches one wall, a keyhole appears and she tries to insert the key.",
-	"The key fits and secret door is opened and Jo carefully steps out of the room, still holding the lamp.",
-	"But on the outside, there is only another, similar room with message written on the wall saying: YOU CAN'T ESCAPE LIMITED SPACE."
+	"Jo was becoming more and more desperate. She started to pound on the walls.",
+	"Suddenly, when she punched one wall, a keyhole appeared and she tried to insert the key.",
+	"The key fit and secret door was opened and Jo carefully steped out of the room, still holding the lamp.",
+	"But on the outside, there was only another, similar room with message written on the wall saying: YOU CAN'T ESCAPE LIMITED SPACE."
 ]
 
 func fetch_latest_text() -> String:

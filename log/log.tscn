@@ -1,14 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccjswlgkpy0ae"]
+[gd_scene load_steps=2 format=3 uid="uid://ccjswlgkpy0ae"]
 
 [ext_resource type="PackedScene" uid="uid://bn7h5uhj7rgmj" path="res://log/log.glb" id="1_qkmge"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_udvrn"]
-height = 4.04347
-
-[node name="Log" type="StaticBody3D"]
+[node name="Log" type="Node3D"]
 
 [node name="Mesh" parent="." instance=ExtResource("1_qkmge")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.509018, 0)
-shape = SubResource("CylinderShape3D_udvrn")
