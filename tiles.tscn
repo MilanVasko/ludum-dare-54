@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://4eiu38kqtxoe"]
+[gd_scene load_steps=7 format=3 uid="uid://4eiu38kqtxoe"]
 
-[ext_resource type="ArrayMesh" uid="uid://du3h2gf5i7c4y" path="res://tile_cliff.res" id="1_bslqb"]
 [ext_resource type="ArrayMesh" uid="uid://e0vbpn2mwuai" path="res://tile_path.res" id="2_nj5po"]
+[ext_resource type="ArrayMesh" uid="uid://ei2jogox2vdq" path="res://tile_path_cross3.res" id="3_hpllm"]
 [ext_resource type="ArrayMesh" uid="uid://dxdhxisclswjv" path="res://tile_path_corner.res" id="3_kqwvo"]
+[ext_resource type="ArrayMesh" uid="uid://jbgrve3dt3no" path="res://tile_path_cross4.res" id="4_rj44q"]
+[ext_resource type="ArrayMesh" uid="uid://dytqoeqbx6736" path="res://tile_path_end.res" id="5_fcujp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8rfp0"]
 size = Vector3(2, 0.5, 2)
@@ -11,7 +13,6 @@ size = Vector3(2, 0.5, 2)
 
 [node name="tile_cliff" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2, 0, 0)
-mesh = ExtResource("1_bslqb")
 
 [node name="body" type="StaticBody3D" parent="tile_cliff"]
 
@@ -26,3 +27,15 @@ mesh = ExtResource("2_nj5po")
 [node name="tile_path_corner" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.00128, 0, 0, 0, 2.00128, 0, 0, 0, 2.00128, -2, 0, 4)
 mesh = ExtResource("3_kqwvo")
+
+[node name="tile_path_cross3" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2, 0, 4)
+mesh = ExtResource("3_hpllm")
+
+[node name="tile_path_cross4" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2, 0, 8)
+mesh = ExtResource("4_rj44q")
+
+[node name="tile_path_end" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2, 0, 8)
+mesh = ExtResource("5_fcujp")
