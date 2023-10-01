@@ -5,6 +5,7 @@ extends VehicleBody3D
 @onready var engine := $Engine
 @onready var page_grab := $PageGrab
 @onready var gas_grab := $GasGrab
+@onready var brakes := $Brakes
 
 @onready var back_light_left := $BackLightLeft
 @onready var back_light_right := $BackLightRight
@@ -18,6 +19,12 @@ var steer_angle := 0.0
 
 func _process(_delta: float) -> void:
 	var braking := is_braking()
+	if !brakes.playing:
+		if braking:
+			brakes.play()
+	else:
+		if !braking:
+			brakes.stop()
 	back_light_left.visible = braking
 	back_light_right.visible = braking
 

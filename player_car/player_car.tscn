@@ -105,5 +105,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96167, 1.53031)
 stream = ExtResource("9_ljedf")
 bus = &"GasGrab"
 
+[node name="Brakes" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96167, 1.53031)
+stream = ExtResource("8_chl1p")
+bus = &"Brakes"
+
 [editable path="FrontLeftWheel"]
 [editable path="BackLeftWheel"]
