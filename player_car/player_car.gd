@@ -3,6 +3,7 @@ extends VehicleBody3D
 @onready var score_keeper := $ScoreKeeper
 @onready var fuel_tank := $FuelTank
 @onready var engine := $Engine
+@onready var page_grab := $PageGrab
 
 @onready var back_light_left := $BackLightLeft
 @onready var back_light_right := $BackLightRight
@@ -56,6 +57,7 @@ func is_speeding_up() -> bool:
 	return !is_braking_via_throttle()
 
 func add_score(score_to_add: int) -> void:
+	page_grab.play()
 	score_keeper.add_score(score_to_add)
 
 func add_fuel(fuel_to_add: float) -> void:
