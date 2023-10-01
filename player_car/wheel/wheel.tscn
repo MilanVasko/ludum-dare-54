@@ -4,4 +4,5 @@
 
 [node name="Wheel" type="VehicleWheel3D"]
 
-[node name="Mesh" parent="." instance=ExtResource("1_wttqw")]
+[node name="wheel" parent="." instance=ExtResource("1_wttqw")]
+transform = Transform3D(1.76, 0, 0, 0, 1.76, 0, 0, 0, 1.76, 0, 0, 0)
