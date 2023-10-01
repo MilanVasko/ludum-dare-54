@@ -11,7 +11,7 @@ func _process(_delta: float) -> void:
 		queued_audio_files.remove_at(0)
 		stream = queued_audio_file
 		var bus_index := AudioServer.get_bus_index("EverythingExceptVoiceover")
-		AudioServer.set_bus_volume_db(bus_index, -10.0)
+		AudioServer.set_bus_volume_db(bus_index, -14.0)
 		play()
 
 func _on_book_found() -> void:
