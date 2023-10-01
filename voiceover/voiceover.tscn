@@ -1,0 +1,24 @@
+[gd_scene load_steps=14 format=3 uid="uid://djdwjitdgptgk"]
+
+[ext_resource type="Script" path="res://voiceover/voiceover.gd" id="1_rijx7"]
+[ext_resource type="AudioStream" uid="uid://nk52nuo44ydi" path="res://voiceover/page01.wav" id="2_kdlde"]
+[ext_resource type="AudioStream" uid="uid://b0i7b0qn7s738" path="res://voiceover/page02.wav" id="3_e7iqk"]
+[ext_resource type="AudioStream" uid="uid://bp234esr025g5" path="res://voiceover/page03.wav" id="4_sh6ct"]
+[ext_resource type="AudioStream" uid="uid://bvipk2b43ifwo" path="res://voiceover/page04.wav" id="5_q6myo"]
+[ext_resource type="AudioStream" uid="uid://cihpyehwr2dqu" path="res://voiceover/page05.wav" id="6_fb1pv"]
+[ext_resource type="AudioStream" uid="uid://b25e7nco6eve0" path="res://voiceover/page06.wav" id="7_40qab"]
+[ext_resource type="AudioStream" uid="uid://dur73ldn1xsit" path="res://voiceover/page07.wav" id="8_h33s4"]
+[ext_resource type="AudioStream" uid="uid://dkvk50ledko0c" path="res://voiceover/page08.wav" id="9_gncst"]
+[ext_resource type="AudioStream" uid="uid://dblkh2d07xkho" path="res://voiceover/page09.wav" id="10_5usog"]
+[ext_resource type="AudioStream" uid="uid://ch4oep6ra3nxu" path="res://voiceover/page10.wav" id="11_sd57m"]
+[ext_resource type="AudioStream" uid="uid://3e8oyxtg5tvw" path="res://voiceover/page11.wav" id="12_x0fhw"]
+[ext_resource type="AudioStream" uid="uid://bxbaysj6j534v" path="res://voiceover/page12.wav" id="13_0hpql"]
+
+[node name="Voiceover" type="AudioStreamPlayer3D" groups=["book_subscriber"]]
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96167, 1.53031)
+bus = &"Voiceover"
+script = ExtResource("1_rijx7")
+audio_files = Array[AudioStreamWAV]([ExtResource("2_kdlde"), ExtResource("3_e7iqk"), ExtResource("4_sh6ct"), ExtResource("5_q6myo"), ExtResource("6_fb1pv"), ExtResource("7_40qab"), ExtResource("8_h33s4"), ExtResource("9_gncst"), ExtResource("10_5usog"), ExtResource("11_sd57m"), ExtResource("12_x0fhw"), ExtResource("13_0hpql")])
+
+[connection signal="finished" from="." to="." method="_on_finished"]
