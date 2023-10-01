@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Ludum Dare 54"
+config/name="Agatha's Novel"
+config/description="Ludum Dare 54 Jam entry"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
