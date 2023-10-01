@@ -17,10 +17,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("3_4bh1d")
 speed_x = 2.0
 speed_y = 4.0
-transform_distance = 0.2
+transform_distance = 0.3
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Position/Mesh"]
-light_color = Color(1, 0, 1, 1)
+light_color = Color(0.768627, 0.768627, 0.686275, 1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
