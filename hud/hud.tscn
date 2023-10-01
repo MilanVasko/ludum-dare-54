@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cd1dcvn41457k"]
+[gd_scene load_steps=11 format=3 uid="uid://cd1dcvn41457k"]
 
 [ext_resource type="PackedScene" uid="uid://baif8kyaxf76q" path="res://hud_time/time.tscn" id="1_q6un6"]
 [ext_resource type="Script" path="res://hud/hud.gd" id="1_q8j5u"]
 [ext_resource type="PackedScene" uid="uid://b716w73tibqwd" path="res://hud_score/score.tscn" id="2_yxe5x"]
 [ext_resource type="PackedScene" uid="uid://c8p26nw5wr6hc" path="res://hud_win_panel/win_panel.tscn" id="3_ad68h"]
 [ext_resource type="PackedScene" uid="uid://bstsgisrbdki7" path="res://hud_fuel/fuel.tscn" id="4_lghy1"]
+[ext_resource type="PackedScene" uid="uid://b36o6pw7obdxe" path="res://fuel_icon/fuel_icon.tscn" id="5_04cp1"]
 [ext_resource type="PackedScene" uid="uid://bu78usiehtjte" path="res://book_preview_panel/book_preview_panel.tscn" id="5_wyxgi"]
 [ext_resource type="Script" path="res://hud/pause_book_preview_panel.gd" id="7_68rm4"]
 [ext_resource type="PackedScene" uid="uid://cf5vq6dk58a5w" path="res://book_text_keeper/book_text_keeper.tscn" id="8_1t4p6"]
@@ -49,14 +50,21 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -50.0
+offset_left = -70.0
 offset_top = -45.0
-offset_right = 50.0
+offset_right = 70.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="FuelIcon" parent="BottomPanel" instance=ExtResource("5_04cp1")]
+layout_mode = 1
+expand_mode = 3
+
 [node name="Fuel" parent="BottomPanel" instance=ExtResource("4_lghy1")]
 layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+grow_horizontal = 0
 
 [node name="BookPreviewPanel" type="Control" parent="."]
 process_mode = 3

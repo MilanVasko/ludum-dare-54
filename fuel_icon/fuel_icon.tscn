@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b36o6pw7obdxe"]
+
+[ext_resource type="Texture2D" uid="uid://cmrjlbyxu03bx" path="res://fuel_icon/gas_indicator.png" id="1_u708u"]
+
+[node name="FuelIcon" type="TextureRect"]
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+texture = ExtResource("1_u708u")
+expand_mode = 2
+stretch_mode = 5
