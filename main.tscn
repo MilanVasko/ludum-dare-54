@@ -66,11 +66,46 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.5495, 0, 82.593)
 [node name="ScoreCollectible12" parent="Books" instance=ExtResource("6_lbsus")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.989, 0, 72.8636)
 
+[node name="Fuels" type="Node" parent="."]
+
+[node name="FuelCollectible" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7415, 0, -3.95558)
+
+[node name="FuelCollectible2" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.747, 0, -26.2541)
+
+[node name="FuelCollectible3" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.9701, 0, -40.6594)
+
+[node name="FuelCollectible4" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.178, 0, -26.6191)
+
+[node name="FuelCollectible5" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.7904, 0, -55.6203)
+
+[node name="FuelCollectible6" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -108.061, 0, 47.4951)
+
+[node name="FuelCollectible7" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.3679, 0, 71.2024)
+
+[node name="FuelCollectible8" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.16, 0, 93.9891)
+
+[node name="FuelCollectible9" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.297, 0, 64.2973)
+
+[node name="FuelCollectible10" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.8045, 0, 108.72)
+
+[node name="FuelCollectible11" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.297, 0, 19.4145)
+
+[node name="FuelCollectible12" parent="Fuels" instance=ExtResource("7_kyw0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.544, 0, 48.6459)
+
 [node name="PlayerCar" parent="." instance=ExtResource("1_cpk7c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6456, 1.01831, -20.7993)
-
-[node name="FuelCollectible" parent="." instance=ExtResource("7_kyw0c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7415, 0, -3.95558)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
