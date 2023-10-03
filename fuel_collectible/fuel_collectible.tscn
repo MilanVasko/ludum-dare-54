@@ -7,7 +7,7 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_cl2rr"]
 radius = 1.0
 
-[node name="FuelCollectible" type="Area3D"]
+[node name="FuelCollectible" type="Area3D" groups=["fuel_collectible"]]
 script = ExtResource("1_icwsx")
 fuel_amount = 15.0
 

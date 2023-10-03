@@ -49,16 +49,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.8725, 0, 9.97623)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.3642, 0, 3.34569)
 
 [node name="ScoreCollectible9" parent="Books" instance=ExtResource("2_70f62")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.4965, 0, 48.318)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.9649, 0, 7.13046)
 
 [node name="ScoreCollectible10" parent="Books" instance=ExtResource("2_70f62")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.0788, 0, 57.5122)
 
 [node name="ScoreCollectible11" parent="Books" instance=ExtResource("2_70f62")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.5495, 0, 82.593)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 138.102, 0, 82.593)
 
 [node name="ScoreCollectible12" parent="Books" instance=ExtResource("2_70f62")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.989, 0, 72.8636)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -115.695, 0, 86.0889)
 
 [node name="Decorations" type="Node" parent="."]
 
@@ -1907,7 +1907,7 @@ transform = Transform3D(-0.187141, -4.29391e-08, -0.982333, 4.29391e-08, 1, -5.1
 [node name="Fuels" type="Node" parent="."]
 
 [node name="FuelCollectible" parent="Fuels" instance=ExtResource("3_i7m4i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7415, 0, -3.95558)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.4429, 0, 56.3493)
 
 [node name="FuelCollectible2" parent="Fuels" instance=ExtResource("3_i7m4i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.747, 0, -26.2541)
@@ -1940,7 +1940,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.2993, 0, -3.95337)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.9912, 0, 79.2719)
 
 [node name="FuelCollectible22" parent="Fuels" instance=ExtResource("3_i7m4i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.604, 0, 92.6953)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.042, 0, 85.4072)
 
 [node name="FuelCollectible8" parent="Fuels" instance=ExtResource("3_i7m4i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.16, 0, 93.9891)
@@ -1955,7 +1955,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.8045, 0, 108.72)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.297, 0, 19.4145)
 
 [node name="FuelCollectible15" parent="Fuels" instance=ExtResource("3_i7m4i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4796, 0, 27.8152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.5489, 0, 43.9801)
 
 [node name="FuelCollectible16" parent="Fuels" instance=ExtResource("3_i7m4i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.6037, 0, -70.0713)

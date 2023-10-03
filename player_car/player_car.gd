@@ -42,6 +42,8 @@ func _physics_process(delta: float) -> void:
 			if engine_force <= 0.0:
 				engine.stop()
 		engine_force = fuel_tank.burn_fuel(engine_force)
+		if absf(engine_force) > 0.001:
+			get_tree().call_group("fuel_collectible", "respawn_timer", delta)
 	else:
 		if engine.playing:
 			engine.stop()
